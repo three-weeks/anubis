@@ -2,6 +2,14 @@
 
 Continuous Integration. Continuous Delivery. Continuous Deploy.
 
+## Architecture
+
+- Containers as first-class
+- Database:
+- Frontend: NodeJS
+- Routing (API): Elixir or Go
+- Services: Any Language (API driven)
+
 ## API Endpoints `/api`
 
 - Version API, in the URL `/api/v.1.0/`
@@ -47,7 +55,6 @@ Continuous Integration. Continuous Delivery. Continuous Deploy.
 |CONNECT | | | | |
 
 ### `/service`
-|METHOD  | PATH  | RETURN CODE   | PARAMS  |   |
 |METHOD  | PATH  | RETURN CODE   | PARAMS  |   |
 |---:|---|---|---|---|
 |GET   |  |   |   |   |
