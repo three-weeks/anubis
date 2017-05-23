@@ -2,6 +2,10 @@
 
 Continuous Integration. Continuous Delivery. Continuous Deploy.
 
+## TODO
+- [ ] Plugin Specification/API
+- [ ] Service Specification/API
+
 ## Architecture
 
 - Containers as first-class
@@ -9,12 +13,16 @@ Continuous Integration. Continuous Delivery. Continuous Deploy.
 - Frontend: NodeJS
 - Routing (API): Elixir or Go
 - Services: Any Language (API driven)
+- Desktop: Electron
 
 ## API Endpoints `/api`
 
 - Version API, in the URL `/api/v.1.0/`
 
+
 ### `/database`
+Direct interaction with the database.
+
 |METHOD  | PATH  | RETURN CODE | PARAMS | NOTES |
 |-------:|-------|-------------|--------|-------|
 |GET   |  |   |   |   |
@@ -29,6 +37,8 @@ Continuous Integration. Continuous Delivery. Continuous Deploy.
 
 
 ### `/user`
+Interact with user accounts.
+
 |METHOD  | PATH  | RETURN CODE | PARAMS | NOTES |
 |-------:|-------|-------------|--------|-------|
 |GET   |  |   |   |   |
@@ -42,6 +52,8 @@ Continuous Integration. Continuous Delivery. Continuous Deploy.
 |CONNECT | | | | |
 
 ### `/plugin`
+Used to interact with plugins.
+
 |METHOD  | PATH  | RETURN CODE | PARAMS | NOTES |
 |-------:|-------|-------------|--------|-------|
 |GET   |  |   |   |   |
@@ -55,6 +67,8 @@ Continuous Integration. Continuous Delivery. Continuous Deploy.
 |CONNECT | | | | |
 
 ### `/service`
+Used by the API routing layer to call individual services.
+
 |METHOD  | PATH  | RETURN CODE | PARAMS | NOTES |
 |-------:|-------|-------------|--------|-------|
 |GET   |  |   |   |   |
@@ -68,6 +82,8 @@ Continuous Integration. Continuous Delivery. Continuous Deploy.
 |CONNECT | | | | |
 
 ### `/stream`
+Interacting with the global pub/sub system.
+
 |METHOD  | PATH  | RETURN CODE | PARAMS | NOTES |
 |-------:|-------|-------------|--------|-------|
 |GET   |  |   |   |   |
@@ -81,6 +97,8 @@ Continuous Integration. Continuous Delivery. Continuous Deploy.
 |CONNECT | | | | |
 
 ### `/job`
+Interacting with individual jobs.
+
 |METHOD  | PATH  | RETURN CODE | PARAMS | NOTES |
 |-------:|-------|-------------|--------|-------|
 |GET   |  |   |   |   |
@@ -94,6 +112,8 @@ Continuous Integration. Continuous Delivery. Continuous Deploy.
 |CONNECT | | | | |
 
 ### `/build`
+Interacting with previously, or currently executed jobs.
+
 |METHOD  | PATH  | RETURN CODE | PARAMS | NOTES |
 |-------:|-------|-------------|--------|-------|
 |GET   |  |   |   |   |
