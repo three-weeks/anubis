@@ -5,7 +5,7 @@ Continuous Integration. Continuous Delivery. Continuous Deploy.
 ## Architecture
 
 - Containers as first-class
-- Database:
+- Database: CouchDB
 - Frontend: NodeJS
 - Routing (API): Elixir or Go
 - Services: Any Language (API driven)
@@ -15,8 +15,8 @@ Continuous Integration. Continuous Delivery. Continuous Deploy.
 - Version API, in the URL `/api/v.1.0/`
 
 ### `/database`
-|METHOD  | PATH  | RETURN CODE   | PARAMS  |   |
-|---:|---|---|---|---|
+|METHOD  | PATH  | RETURN CODE | PARAMS | NOTES |
+|-------:|-------|-------------|--------|-------|
 |GET   |  |   |   |   |
 |PUT   |   |   |   |   |
 |POST   |   |   |   |   |
@@ -29,8 +29,8 @@ Continuous Integration. Continuous Delivery. Continuous Deploy.
 
 
 ### `/user`
-|METHOD  | PATH  | RETURN CODE   | PARAMS  |   |
-|---:|---|---|---|---|
+|METHOD  | PATH  | RETURN CODE | PARAMS | NOTES |
+|-------:|-------|-------------|--------|-------|
 |GET   |  |   |   |   |
 |PUT   |   |   |   |   |
 |POST   |   |   |   |   |
@@ -42,8 +42,8 @@ Continuous Integration. Continuous Delivery. Continuous Deploy.
 |CONNECT | | | | |
 
 ### `/plugin`
-|METHOD  | PATH  | RETURN CODE   | PARAMS  |   |
-|---:|---|---|---|---|
+|METHOD  | PATH  | RETURN CODE | PARAMS | NOTES |
+|-------:|-------|-------------|--------|-------|
 |GET   |  |   |   |   |
 |PUT   |   |   |   |   |
 |POST   |   |   |   |   |
@@ -55,8 +55,8 @@ Continuous Integration. Continuous Delivery. Continuous Deploy.
 |CONNECT | | | | |
 
 ### `/service`
-|METHOD  | PATH  | RETURN CODE   | PARAMS  |   |
-|---:|---|---|---|---|
+|METHOD  | PATH  | RETURN CODE | PARAMS | NOTES |
+|-------:|-------|-------------|--------|-------|
 |GET   |  |   |   |   |
 |PUT   |   |   |   |   |
 |POST   |   |   |   |   |
@@ -68,8 +68,8 @@ Continuous Integration. Continuous Delivery. Continuous Deploy.
 |CONNECT | | | | |
 
 ### `/stream`
-|METHOD  | PATH  | RETURN CODE   | PARAMS  |   |
-|---:|---|---|---|---|
+|METHOD  | PATH  | RETURN CODE | PARAMS | NOTES |
+|-------:|-------|-------------|--------|-------|
 |GET   |  |   |   |   |
 |PUT   |   |   |   |   |
 |POST   |   |   |   |   |
@@ -81,8 +81,8 @@ Continuous Integration. Continuous Delivery. Continuous Deploy.
 |CONNECT | | | | |
 
 ### `/job`
-|METHOD  | PATH  | RETURN CODE   | PARAMS  |   |
-|---:|---|---|---|---|
+|METHOD  | PATH  | RETURN CODE | PARAMS | NOTES |
+|-------:|-------|-------------|--------|-------|
 |GET   |  |   |   |   |
 |PUT   |   |   |   |   |
 |POST   |   |   |   |   |
@@ -94,8 +94,8 @@ Continuous Integration. Continuous Delivery. Continuous Deploy.
 |CONNECT | | | | |
 
 ### `/build`
-|METHOD  | PATH  | RETURN CODE   | PARAMS  |   |
-|---:|---|---|---|---|
+|METHOD  | PATH  | RETURN CODE | PARAMS | NOTES |
+|-------:|-------|-------------|--------|-------|
 |GET   |  |   |   |   |
 |PUT   |   |   |   |   |
 |POST   |   |   |   |   |
@@ -117,10 +117,12 @@ Example, `/api/v.1.0/plugin/[plugin_id]/help`
 ```json
 {
   "routes": {
-    "/apples": [
-      "token",
-      "type"
-    ]
+    "/apples": {
+      "params": [
+        "token",
+        "type"
+      ]
+    }
   }
 }
 ```
