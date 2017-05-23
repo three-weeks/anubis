@@ -8,7 +8,7 @@ Continuous Integration. Continuous Delivery. Continuous Deploy.
 
 ### `/database`
 |METHOD  | PATH  | RETURN CODE   | PARAMS  |   |
-|---|---|---|---|---|
+|---:|---|---|---|---|
 |GET   |  |   |   |   |
 |PUT   |   |   |   |   |
 |POST   |   |   |   |   |
@@ -22,7 +22,7 @@ Continuous Integration. Continuous Delivery. Continuous Deploy.
 
 ### `/user`
 |METHOD  | PATH  | RETURN CODE   | PARAMS  |   |
-|---|---|---|---|---|
+|---:|---|---|---|---|
 |GET   |  |   |   |   |
 |PUT   |   |   |   |   |
 |POST   |   |   |   |   |
@@ -35,7 +35,7 @@ Continuous Integration. Continuous Delivery. Continuous Deploy.
 
 ### `/plugin`
 |METHOD  | PATH  | RETURN CODE   | PARAMS  |   |
-|---|---|---|---|---|
+|---:|---|---|---|---|
 |GET   |  |   |   |   |
 |PUT   |   |   |   |   |
 |POST   |   |   |   |   |
@@ -48,7 +48,8 @@ Continuous Integration. Continuous Delivery. Continuous Deploy.
 
 ### `/service`
 |METHOD  | PATH  | RETURN CODE   | PARAMS  |   |
-|---|---|---|---|---|
+|METHOD  | PATH  | RETURN CODE   | PARAMS  |   |
+|---:|---|---|---|---|
 |GET   |  |   |   |   |
 |PUT   |   |   |   |   |
 |POST   |   |   |   |   |
@@ -61,7 +62,7 @@ Continuous Integration. Continuous Delivery. Continuous Deploy.
 
 ### `/stream`
 |METHOD  | PATH  | RETURN CODE   | PARAMS  |   |
-|---|---|---|---|---|
+|---:|---|---|---|---|
 |GET   |  |   |   |   |
 |PUT   |   |   |   |   |
 |POST   |   |   |   |   |
@@ -74,7 +75,7 @@ Continuous Integration. Continuous Delivery. Continuous Deploy.
 
 ### `/job`
 |METHOD  | PATH  | RETURN CODE   | PARAMS  |   |
-|---|---|---|---|---|
+|---:|---|---|---|---|
 |GET   |  |   |   |   |
 |PUT   |   |   |   |   |
 |POST   |   |   |   |   |
@@ -87,7 +88,7 @@ Continuous Integration. Continuous Delivery. Continuous Deploy.
 
 ### `/build`
 |METHOD  | PATH  | RETURN CODE   | PARAMS  |   |
-|---|---|---|---|---|
+|---:|---|---|---|---|
 |GET   |  |   |   |   |
 |PUT   |   |   |   |   |
 |POST   |   |   |   |   |
