@@ -51,6 +51,21 @@ Interact with user accounts.
 |TRACE | | | | |
 |CONNECT | | | | |
 
+### `/group`
+Interact with user groups.
+
+|METHOD  | PATH  | RETURN CODE | PARAMS | NOTES |
+|-------:|-------|-------------|--------|-------|
+|GET   |  |   |   |   |
+|PUT   |   |   |   |   |
+|POST   |   |   |   |   |
+|DELETE   |   |   |   |   |
+|HEAD | | | | |
+|PATCH | | | | |
+|OPTIONS | | | | |
+|TRACE | | | | |
+|CONNECT | | | | |
+
 ### `/plugin`
 Used to interact with plugins.
 
