@@ -187,6 +187,21 @@ This could also include the `/about` of each service, as well.
 |TRACE | | | | |
 |CONNECT | | | | |
 
+### `/token`
+Used for generating authentication tokens.
+
+|METHOD  | PATH  | RETURN CODE | PARAMS | NOTES |
+|-------:|-------|-------------|--------|-------|
+|GET   |  |   |   |   |
+|PUT   |   |   |   |   |
+|POST   |   |   |   |   |
+|DELETE   |   |   |   |   |
+|HEAD | | | | |
+|PATCH | | | | |
+|OPTIONS | | | | |
+|TRACE | | | | |
+|CONNECT | | | | |
+
 
 ## Plugins
 
