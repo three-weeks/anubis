@@ -171,6 +171,22 @@ Interacting with previously, or currently executed jobs.
 |TRACE | | | | |
 |CONNECT | | | | |
 
+### `/about`
+Provides information about the current Anubis API.
+This could also include the `/about` of each service, as well.
+
+|METHOD  | PATH  | RETURN CODE | PARAMS | NOTES |
+|-------:|-------|-------------|--------|-------|
+|GET   |  |   |   |   |
+|PUT   |   |   |   |   |
+|POST   |   |   |   |   |
+|DELETE   |   |   |   |   |
+|HEAD | | | | |
+|PATCH | | | | |
+|OPTIONS | | | | |
+|TRACE | | | | |
+|CONNECT | | | | |
+
 
 ## Plugins
 
