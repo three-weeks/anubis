@@ -66,6 +66,36 @@ Interact with user groups.
 |TRACE | | | | |
 |CONNECT | | | | |
 
+### `/secrets`
+Access to a built-in key/value store.
+
+|METHOD  | PATH  | RETURN CODE | PARAMS | NOTES |
+|-------:|-------|-------------|--------|-------|
+|GET   |  |   |   |   |
+|PUT   |   |   |   |   |
+|POST   |   |   |   |   |
+|DELETE   |   |   |   |   |
+|HEAD | | | | |
+|PATCH | | | | |
+|OPTIONS | | | | |
+|TRACE | | | | |
+|CONNECT | | | | |
+
+### `/metrics`
+Provides overall build metrics (num of jobs, num of running jobs, etc).
+
+|METHOD  | PATH  | RETURN CODE | PARAMS | NOTES |
+|-------:|-------|-------------|--------|-------|
+|GET   |  |   |   |   |
+|PUT   |   |   |   |   |
+|POST   |   |   |   |   |
+|DELETE   |   |   |   |   |
+|HEAD | | | | |
+|PATCH | | | | |
+|OPTIONS | | | | |
+|TRACE | | | | |
+|CONNECT | | | | |
+
 ### `/plugin`
 Used to interact with plugins.
 
